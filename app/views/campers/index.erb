@@ -2,3 +2,10 @@
 
 <%# Display a list all of the campers %>
 
+<ul>
+<%@campers.map do |camper| %>
+    <li> <%= link_to camper.name, camper_path(camper) %></li>
+<%end%>
+
+</ul>
+

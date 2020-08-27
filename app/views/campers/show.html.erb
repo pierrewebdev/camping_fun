@@ -1,0 +1,10 @@
+<h1> <%= @camper.name%> </h1>
+
+<p style = "font-weight:bold;"> Age: <%= @camper.age%> </p>
+
+<ul>
+<%@camper.activities.map do |activity| %>
+    <li> <%= activity.name %></li>
+<%end%>
+
+</ul>
